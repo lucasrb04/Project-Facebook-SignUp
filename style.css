@@ -16,5 +16,9 @@ header {
 }
 .left-content {
   width: 800px;
-  
+}
+.right-content {
+  width: 300px;
+  /* Avaliar melhor propriedade para o justify-content */
+  justify-content: center;
 }
