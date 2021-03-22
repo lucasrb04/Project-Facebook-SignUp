@@ -11,15 +11,29 @@ header {
   height: 100px;
   justify-content: space-around;
   align-items: center;
-
 }
 
-HEAD .form-group {
+.section-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
+  padding-right: 15px;
+
 }
 
-HEAD
+.form-control {
+  align-self: flex-end;
+}
+
 .full-name {
   display: flex;
 }

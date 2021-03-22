@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Facebook</title>
 </head>
 
@@ -16,14 +17,18 @@
     </section>
     <section class="section-login">
       <form action method="GET" class="facebook-login" enctype="multipart/form-data">
+        <!--Login-->
         <section class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone <input type="text"
-              id="user-email-phone"></label>
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone </label>
+          <input type="text" id="user-email-phone">
         </section>
+        <!--Password-->
         <section class="form-group">
-          <label id="user-password-label" for="user-password">Senha <input type="password" name="password"
-              id="user-password"></label>
-
+          <label id="user-password-label" for="user-password">Senha </label>
+          <input type="password" name="password" id="user-password">
+        </section>
+        <section class="form-control">
+          <button id="button-login">Entrar</button>
         </section>
       </form>
     </section>
@@ -71,6 +76,7 @@
       </form>
     </section>
   </article>
+
 </body>
 
 </html>
