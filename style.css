@@ -11,6 +11,7 @@ header {
   height: 100px;
   justify-content: space-around;
   align-items: center;
+  /* aaaaast */
 }
 
 .section-login {
@@ -27,7 +28,7 @@ header {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
-
+  color: white;
 }
 
 .form-control {
@@ -37,6 +38,25 @@ header {
 .full-name {
   display: flex;
 }
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+.full-name {
+  display: flex;
+}
+
 
 div input {
   width: 140px;
