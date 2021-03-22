@@ -9,9 +9,28 @@ header {
   background-color: rgb(66, 103, 178);
   width: 100%;
   height: 100px;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
-.form-group {
+<<<<<<< HEAD .form-group {
   display: flex;
   flex-direction: column;
 }
+
+=======.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  /* Avaliar melhor propriedade para o justify-content */
+  justify-content: center;
+}
+
+>>>>>>>daba19b6cc3425aae618a449b8cc06d89530393e
