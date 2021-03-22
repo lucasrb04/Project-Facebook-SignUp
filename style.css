@@ -42,6 +42,7 @@ header {
 .full-name {
   display: flex;
 }
+/* 
 
 
 
@@ -54,9 +55,13 @@ header {
 
 
 
-
-
-
+ */
+.full-name {
+  display: flex;
+}
+div input {
+  width: 150px;
+}
 .main-content {
   display: flex;
 }
