@@ -14,12 +14,31 @@ header {
 
 }
 
-<<<<<<< HEAD .form-group {
+HEAD .form-group {
   display: flex;
   flex-direction: column;
 }
 
-=======.main-content {
+HEAD
+.full-name {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content {
   display: flex;
 }
 
@@ -32,5 +51,3 @@ header {
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
 }
-
->>>>>>>daba19b6cc3425aae618a449b8cc06d89530393e
