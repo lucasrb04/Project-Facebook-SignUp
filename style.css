@@ -13,14 +13,47 @@ header {
   align-items: center;
 }
 
+.section-logo {
+  padding-left: 10%;
+}
+
+.facebook-logo {
+  width: 170px;
+}
+
 .section-login {
   display: flex;
   justify-content: flex-end;
+  padding-right: 10%;
+}
+
+.section-login label {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.section-login a {
+  color: #9cb4d8;
+  text-decoration: none;
+  font-size: 12px;
+  padding-top: 5px;
 }
 
 .facebook-login {
   display: flex;
   justify-content: space-around;
+}
+
+#button-login {
+  background-color: #4267b2;
+  border: solid 1px #29487d;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 2px 6px;
+  color: white;
+  text-align: center;
 }
 
 .form-group {
