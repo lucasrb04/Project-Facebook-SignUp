@@ -13,6 +13,8 @@ header {
   align-items: center;
 }
 
+.facebook-logo {}
+
 .section-login {
   display: flex;
   justify-content: flex-end;
@@ -27,7 +29,10 @@ header {
   display: flex;
   flex-direction: column;
   padding-right: 15px;
+}
 
+.form-group {
+  color: white;
 }
 
 .form-control {
