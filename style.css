@@ -13,10 +13,30 @@ header {
   align-items: center;
 }
 
+.section-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-around;
+}
+
 .form-group {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.full-name {
+  display: flex;
+}
 /* 
 
 
@@ -34,7 +54,7 @@ header {
 .full-name {
   display: flex;
 }
-input text {
+div input {
   width: 150px;
 }
 .main-content {

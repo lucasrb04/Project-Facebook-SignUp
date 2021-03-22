@@ -16,10 +16,19 @@
     </section>
     <section class="section-login">
       <form action method="GET" class="facebook-login" enctype="multipart/form-data">
-      <section class="form-group">
-       <label id="user-email-phone-label" for="user-login">Email ou telefone</label>
-       <input type="text" name="user-login" id="user-email-phone">
-      </section>
+        <!--Login-->
+        <section class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone </label>
+          <input type="text" id="user-email-phone">
+        </section>
+        <!--Password-->
+        <section class="form-group">
+          <label id="user-password-label" for="user-password">Senha </label>
+          <input type="password" name="password" id="user-password">
+        </section>
+        <section class="form-control">
+          <button id="button-login">Entrar</button>
+        </section>
       </form>
     </section>
   </header>
@@ -47,7 +56,8 @@
  -->
   <article class="main-content">
     <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
       <img src="imgs/networking.png" alt="Conexões">
     </section>
     <section class="right-content">
@@ -78,5 +88,6 @@
       </form>
     </section>
   </article>
+  <script src="script.js"></script>
 </body>
 </html>
