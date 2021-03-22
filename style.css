@@ -37,26 +37,11 @@ header {
 .full-name {
   display: flex;
 }
-/* 
 
-
-
-
-
-
-
-
-
-
-
-
- */
-.full-name {
-  display: flex;
-}
 div input {
   width: 150px;
 }
+
 .main-content {
   display: flex;
 }
@@ -67,6 +52,7 @@ div input {
 
 .right-content {
   width: 300px;
+
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
 }
