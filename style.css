@@ -22,3 +22,6 @@ header {
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
 }
+.full-name {
+  display: flex;
+}
