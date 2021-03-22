@@ -11,18 +11,12 @@ header {
   height: 100px;
   justify-content: space-around;
   align-items: center;
-
 }
 
-HEAD .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-HEAD
-.full-name {
-  display: flex;
-}
+.form-group {
+    display: flex;
+    flex-direction: column;
+  }
 /* 
 
 
@@ -37,6 +31,12 @@ HEAD
 
 
  */
+.full-name {
+  display: flex;
+}
+input text {
+  width: 150px;
+}
 .main-content {
   display: flex;
 }
