@@ -20,7 +20,8 @@ header {
 .section-login {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10%;
+
+  /* padding-right: 10%; */
 }
 
 .section-login label {
