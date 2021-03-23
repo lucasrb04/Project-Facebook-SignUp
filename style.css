@@ -13,10 +13,6 @@ header {
   align-items: center;
 }
 
-.section-logo {
-  padding-left: 10%;
-}
-
 .facebook-logo {
   width: 170px;
 }
@@ -24,7 +20,6 @@ header {
 .section-login {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10%;
 }
 
 .section-login label {
@@ -88,4 +83,8 @@ div input {
 
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
+}
+
+#gender-custom {
+  display: none;
 }

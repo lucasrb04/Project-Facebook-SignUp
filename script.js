@@ -5,16 +5,13 @@ btnEntrar.addEventListener('click', () => {
   alert(valorLogin.value);
 });
 
-/* Cria um novo input para a opção de gênero Personalizado */
-const formContaNova = document.querySelector('.form-right-content');
-const personalizado = document.querySelector('#custom');
-
-function generoCustom() {
-  personalizado.addEventListener('click', () => {
-    const customInput = document.createElement('input');
-    customInput.name = 'gender-custom';
-    customInput.placeholder = 'Gênero (opcional)';
-    formContaNova.appendChild(customInput);
-  });
-}
-generoCustom();
+const genderOption = document.querySelector('.gender-section');
+const newInput = document.querySelector('#gender-custom');
+genderOption.addEventListener('click', (event) => {
+  const evento = event.target;
+  if (evento.id === 'custom') {
+    newInput.style.display = 'block';
+  } else {
+    newInput.style.display = 'none';
+  }
+});
