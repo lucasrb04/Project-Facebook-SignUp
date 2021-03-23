@@ -35,14 +35,14 @@ function checkRadio() {
   }
   return true;
 }
-// const submitBtn = document.querySelector('#facebook-register');
-// submitBtn.addEventListener('click', () => {
-
-// });
+// function invalidInputMessage() {
+//   const p = document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
+//   p.innerHTML = ''
+// }
 const form = document.querySelector('.form-right-content');
 form.addEventListener('submit', (event) => {
   if (check() || checkRadio()) {
-    alert('Campos inválidos');
+    document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
     event.preventDefault();
   }
 });
