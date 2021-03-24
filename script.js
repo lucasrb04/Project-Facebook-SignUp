@@ -6,21 +6,27 @@ btnEntrar.addEventListener('click', () => {
 });
 
 /* Cria um novo input para a opção de gênero Personalizado */
-const inputsRadio = document.querySelectorAll('.input-radio');
 const genderOption = document.querySelector('.gender-section');
 const newInput = document.querySelector('#gender-custom');
 genderOption.addEventListener('click', (event) => {
   const evento = event.target;
-  for (let index = 0; index < inputsRadio.length; index += 1) {
-    inputsRadio[index].classList.remove('selected');
-  }
-  evento.classList.add('selected');
   if (evento.id === 'custom') {
     newInput.style.display = 'block';
   } else {
     newInput.style.display = 'none';
   }
 });
+
+function genderSelected() {
+  const female = document.querySelector('#female');
+  const male = document.querySelector('#male');
+  const custom = document.querySelector('#custom');
+  let gender = '';
+  if (female.checked) gender = female.value;
+  if (male.checked) gender = male.value;
+  if (custom.checked) gender = custom.value;
+  return gender;
+}
 
 function check() {
   const input = document.querySelectorAll('.required');
@@ -42,7 +48,10 @@ function checkRadio() {
   }
   return true;
 }
-
+const firstName = document.querySelector('#firstname');
+const lastName = document.querySelector('#lastname');
+const phoneEmail = document.querySelector('#phone-email');
+const birthdate = document.querySelector('#birthdate');
 const sectionForms = document.querySelector('.section-forms');
 const conteudoDireita = document.querySelector('.right-content');
 const form = document.querySelector('.form-right-content');
@@ -55,11 +64,10 @@ form.addEventListener('submit', (event) => {
     document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
   } else {
     const criaTagP = document.createElement('p');
-    criaTagP.innerHTML = 'Olá,';
-    for (let index = 0; index < inputsForm.length; index += 1) {
-      criaTagP.innerHTML += ` ${inputsForm[index].value}`;
-    }
-    criaTagP.innerHTML += ` ${radioSelected.value}`;
+    criaTagP.innerHTML = `Olá, ${firstName.value} ${lastName.value}
+    ${phoneEmail.value}
+    ${birthdate.value};
+    ${genderSelected()}`;
     conteudoDireita.appendChild(criaTagP);
     conteudoDireita.removeChild(sectionForms);
   }
