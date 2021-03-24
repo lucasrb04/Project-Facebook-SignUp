@@ -54,7 +54,6 @@ form.addEventListener('submit', (event) => {
   if (check() || checkRadio()) {
     document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
   } else {
-    sectionForms.style.display = 'none';
     const criaTagP = document.createElement('p');
     criaTagP.innerHTML = 'Olá,';
     for (let index = 0; index < inputsForm.length; index += 1) {
@@ -62,5 +61,6 @@ form.addEventListener('submit', (event) => {
     }
     criaTagP.innerHTML += ` ${radioSelected.value}`;
     conteudoDireita.appendChild(criaTagP);
+    conteudoDireita.removeChild(sectionForms);
   }
 });
