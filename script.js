@@ -43,8 +43,8 @@ function checkRadio() {
   return true;
 }
 
-const containerDireita = document.querySelector('.section-right-content');
-const conteudoDIreita = document.querySelector('.right-content');
+const sectionForms = document.querySelector('.section-forms');
+const conteudoDireita = document.querySelector('.right-content');
 const form = document.querySelector('.form-right-content');
 const inputsForm = form.querySelectorAll('.input-class');
 
@@ -54,13 +54,13 @@ form.addEventListener('submit', (event) => {
   if (check() || checkRadio()) {
     document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
   } else {
-    conteudoDIreita.style.display = 'none';
+    sectionForms.style.display = 'none';
     const criaTagP = document.createElement('p');
     criaTagP.innerHTML = 'Olá';
     for (let index = 0; index < inputsForm.length; index += 1) {
       criaTagP.innerHTML += ` ${inputsForm[index].value}`;
     }
     criaTagP.innerHTML += ` ${radioSelected.value}`;
-    containerDireita.appendChild(criaTagP);
+    conteudoDireita.appendChild(criaTagP);
   }
 });
