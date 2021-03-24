@@ -55,11 +55,9 @@ const birthdate = document.querySelector('#birthdate');
 const sectionForms = document.querySelector('.section-forms');
 const conteudoDireita = document.querySelector('.right-content');
 const form = document.querySelector('.form-right-content');
-const inputsForm = form.querySelectorAll('.input-class');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const radioSelected = document.querySelector('.selected');
   if (check() || checkRadio()) {
     document.querySelector('#invalid-message').innerHTML = 'Campos inválidos';
   } else {
