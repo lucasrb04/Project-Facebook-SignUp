@@ -17,14 +17,15 @@ genderOption.addEventListener('click', (event) => {
   }
 });
 
+// Retorna o gênero selecionado
 function genderSelected() {
-  const female = document.querySelector('#female');
-  const male = document.querySelector('#male');
-  const custom = document.querySelector('#custom');
+  const genderRadio = document.querySelectorAll('.input-radio');
   let gender = '';
-  if (female.checked) gender = female.value;
-  if (male.checked) gender = male.value;
-  if (custom.checked) gender = custom.value;
+  for (let index = 0; index < genderRadio.length; index += 1) {
+    if (genderRadio[index].checked) {
+      gender = genderRadio[index].value;
+    }
+  }
   return gender;
 }
 
