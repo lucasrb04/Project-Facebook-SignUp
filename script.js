@@ -56,7 +56,7 @@ form.addEventListener('submit', (event) => {
   } else {
     sectionForms.style.display = 'none';
     const criaTagP = document.createElement('p');
-    criaTagP.innerHTML = 'Olá';
+    criaTagP.innerHTML = 'Olá,';
     for (let index = 0; index < inputsForm.length; index += 1) {
       criaTagP.innerHTML += ` ${inputsForm[index].value}`;
     }
