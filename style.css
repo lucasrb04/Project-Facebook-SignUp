@@ -71,7 +71,13 @@ div input {
 }
 
 .main-content {
+  padding-top: 50px;
+  height: 500px;
+  flex-direction: row;
   display: flex;
+  justify-content: center;
+  background: linear-gradient(white, #D3D8E8);
+
 }
 
 .left-content {
