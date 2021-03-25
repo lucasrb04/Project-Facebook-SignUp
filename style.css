@@ -66,26 +66,52 @@ header {
   display: flex;
 }
 
-div input {
-  width: 140px;
+h1 {
+  font-size: 30px;
 }
 
+input {
+  margin: 5px;
+  width: 310px;
+}
+
+div input {
+  width: 150px;
+}
+.right-content button {
+  background-color: #69a74e;
+  line-height: 100%;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  margin-bottom: 10px;
+}
+
+#male, #female, #custom {
+  width: auto;
+}
 .main-content {
-  padding-top: 50px;
-  height: 500px;
+  padding-top: 30px;
+  height: 400px;
   flex-direction: row;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   background: linear-gradient(white, #D3D8E8);
-
-}
+  }
 
 .left-content {
-  width: 800px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding-right: 50px;
+  /* align-items: center; */
 }
 
 .right-content {
-  width: 300px;
+  padding-left: 50px;
+  width: 400px;
 
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
