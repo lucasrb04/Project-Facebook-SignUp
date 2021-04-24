@@ -112,13 +112,13 @@ div input {
 .left-content {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 800px;
   padding-right: 50px;
 }
 
 .right-content {
   padding-left: 50px;
-  width: 400px;
+  width: 300px;
 
   /* Avaliar melhor propriedade para o justify-content */
   justify-content: center;
